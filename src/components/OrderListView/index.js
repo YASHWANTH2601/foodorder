@@ -8,7 +8,7 @@ const CartListView = () => (
   <OrderContext.Consumer>
     {value => {
       const {orderList} = value
-   {/* console.log(orderList) */}
+   console.log(orderList)
       return (
         <ul >{
             orderList.length===1? (

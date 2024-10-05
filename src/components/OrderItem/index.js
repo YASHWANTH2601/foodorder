@@ -15,14 +15,14 @@ const OrderItem = (props) => (
         id,
         category,
         availableQuantity,
-        imageUrl,
+        image_url,
         name,
         price,
         subCategory,
         type,
         quantity,
       } = orderItemDetails;
-    console.log(orderItemDetails)
+    {/* console.log(orderItemDetails) */}
 
       const decreaseButton = () => {
         decrementQuantity(id);
@@ -34,7 +34,7 @@ const OrderItem = (props) => (
       return (
         <li className="cart-item">
           {/* eslint-disable-next-line jsx-a11y/alt-text */}
-          <img src={imageUrl} />
+          <img src={image_url} />
           <p>{name}</p>
           <p>{price}</p>
           <p>{type}</p>
