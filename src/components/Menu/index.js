@@ -74,6 +74,7 @@ class Menu extends Component {
         price: each.price,
         subCategory: each.sub_category,
         type: each.type,
+        quantity:1
       }));
 
       this.setState({
